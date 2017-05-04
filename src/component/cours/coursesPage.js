@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import connect from 'react-redux';
+import {connect} from 'react-redux';
 import * as courseActions from '../../actions/courseActions';
 
 class CoursesPage extends React.Component {
