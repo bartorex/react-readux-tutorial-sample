@@ -24,9 +24,19 @@ class CoursesPage extends React.Component {
         this.props.dispatch(courseActions.createCourse(this.state.course))
     }
 
+    onClickDelete(){
+        // this.props.dispatch()
+    
+    }
+
     courseRow(course, index) {
         return (
-            <div key={index}>{course.title}</div>
+            <div key={index} className="row">
+                <span className="col">{course.title}</span>
+                <button className="col-4 btn btn-danger">
+                    Delete
+                </button>
+            </div>
         )
     }
 

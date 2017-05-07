@@ -9,9 +9,9 @@ import CoursesPage from './component/cours/coursesPage';
 class App extends Component {
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container">
         <Router>
-          <div>
+          <div className="row">
             <Header />
             <Route exact path="/" component={HomePage} />
             <Route path="/abaut" component={AbautPage} />
