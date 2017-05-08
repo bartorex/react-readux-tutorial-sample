@@ -4,8 +4,10 @@ import App from './App';
 import './index.css';
 import configureStore from './store/configureStore';
 import {Provider} from 'react-redux';
+import {loadCourses} from './actions/courseActions';
 
 const store = configureStore();
+store.dispatch(loadCourses());
 
 ReactDOM.render(
   <Provider store={store}>  
